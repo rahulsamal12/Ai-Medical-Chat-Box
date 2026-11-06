@@ -1,0 +1,37 @@
+# Environments and Secrets
+.env
+*.env
+.env.*
+!.env.example
+medical-chatbot-refactored-main/.env
+medical-chatbot-refactored-main/.env.*
+!medical-chatbot-refactored-main/.env.example
+
+# Python virtual environment
+.venv/
+medical-chatbot-refactored-main/.venv/
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+
+# FAISS Vector Store binary indexes (user generates locally via create_memory_for_llm.py)
+vectorstore/db_faiss/
+medical-chatbot-refactored-main/vectorstore/db_faiss/
+
+# Large datasets and PDFs
+medical-chatbot-refactored-main/data/*.pdf
+
+# IDE and Editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS and temporary files
+Thumbs.db
+.DS_Store
+*.tmp
